@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Writing — Kristoffer Strømdal Wik</title>
+  <meta name="description" content="Writing" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="site-name"><a href="/">Kristoffer Strømdal Wik</a></div>
+    <nav>
+      <a href="/">About</a>
+      <a href="blog.html" class="active">Writing</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── Post list view ─────────────────────── -->
+    <div id="list-view">
+      <section>
+        <h2>Writing</h2>
+        <ul class="post-list" id="post-list">
+          <li style="color:var(--muted);font-size:.88rem">Loading…</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- ── Single post view (shown when #slug) ── -->
+    <div id="post-view">
+      <a href="blog.html" class="back-link">← All posts</a>
+      <article>
+        <div class="post-header">
+          <h1 id="pv-title"></h1>
+          <p class="post-meta" id="pv-meta"></p>
+        </div>
+        <div class="post-content" id="pv-content"></div>
+      </article>
+    </div>
+
+  </main>
+
+  <footer>
+    <span>Kristoffer Strømdal Wik</span>
+    <span><a href="https://wwwik.no">wwwik.no</a></span>
+  </footer>
+
+</div>
+
+<!-- Marked.js for Markdown rendering -->
+<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+<script>
+  let allPosts = [];
+
+  fetch('posts.json')
+    .then(r => r.json())
+    .then(({ posts }) => {
+      allPosts = [...posts].sort((a, b) => b.date.localeCompare(a.date));
+      route();
+    })
+    .catch(() => {
+      document.getElementById('post-list').innerHTML =
+        '<li style="color:var(--muted);font-size:.88rem">Could not load posts.</li>';
+    });
+
+  function route() {
+    const hash = location.hash.slice(1);
+    if (hash) {
+      const post = allPosts.find(p => p.id === hash);
+      post ? showPost(post) : showList();
+    } else {
+      showList();
+    }
+  }
+
+  function showList() {
+    document.getElementById('list-view').classList.remove('hidden');
+    document.getElementById('post-view').classList.remove('visible');
+    document.title = 'Writing — Kristoffer Strømdal Wik';
+
+    const list = document.getElementById('post-list');
+    if (!allPosts.length) {
+      list.innerHTML = '<li style="color:var(--muted);font-size:.88rem">No posts yet.</li>';
+      return;
+    }
+    list.innerHTML = allPosts.map(p => `
+      <li class="post-item">
+        <span class="post-date">${fmtDate(p.date)}</span>
+        <div class="post-body">
+          <div class="post-title">
+            <span class="badge badge-${p.type === 'achievement' ? 'achievement' : 'blog'}">
+              ${p.type === 'achievement' ? 'Achievement' : 'Post'}
+            </span>
+            <a href="#${p.id}">${p.title}</a>
+          </div>
+          <p class="post-summary">${p.summary}</p>
+        </div>
+      </li>
+    `).join('');
+  }
+
+  function showPost(post) {
+    document.getElementById('list-view').classList.add('hidden');
+    const view = document.getElementById('post-view');
+    view.classList.add('visible');
+
+    document.title = post.title + ' — Kristoffer Strømdal Wik';
+    document.getElementById('pv-title').textContent = post.title;
+    document.getElementById('pv-meta').innerHTML =
+      `<span class="badge badge-${post.type === 'achievement' ? 'achievement' : 'blog'}">${post.type === 'achievement' ? 'Achievement' : 'Post'}</span>` +
+      fmtDate(post.date) +
+      (post.tags?.length ? ' · ' + post.tags.map(t => '#' + t).join(' ') : '');
+
+    // Render markdown content
+    document.getElementById('pv-content').innerHTML =
+      typeof marked !== 'undefined'
+        ? marked.parse(post.content)
+        : post.content.replace(/\n\n/g, '</p><p>').replace(/^/, '<p>').replace(/$/, '</p>');
+  }
+
+  function fmtDate(iso) {
+    const d = new Date(iso + 'T00:00:00');
+    return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+  }
+
+  // React to hash changes (back/forward nav)
+  window.addEventListener('hashchange', route);
+</script>
+</body>
+</html>
