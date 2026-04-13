@@ -6,6 +6,7 @@
   --text: #1a1a1a;
   --muted: #6b6b6b;
   --accent: #2563eb;
+  --muteaccent: #8199cf;
   --border: #e5e7eb;
   --width: 680px;
 }
@@ -212,7 +213,7 @@ p { margin: 0 0 0.75rem; }
 
 /* ── Links / contact ─────────────────────────── */
 .contact-links { display: flex; gap: 1.25rem; flex-wrap: wrap; }
-.contact-links a { color: var(--muted); font-size: 0.9rem; }
+.contact-links a { color: var(--muteaccent); font-size: 0.9rem; }
 .contact-links a:hover { color: var(--text); }
 
 /* ── Footer ──────────────────────────────────── */
