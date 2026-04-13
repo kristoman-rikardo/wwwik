@@ -1,0 +1,8 @@
+*.png
+*.ico
+
+.CLAUDE.md
+
+.settings/
+.vscode/
+*.settings
