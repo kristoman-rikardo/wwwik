@@ -1,7 +1,7 @@
 *.png
 *.ico
 
-.CLAUDE.md
+CLAUDE.md
 
 .settings/
 .vscode/
