@@ -144,7 +144,7 @@
       <h2>Education</h2>
 
       <div class="entry">
-        <span class="entry-title">M.Sc. Industrial Economics & Technology Management</span>
+        <span class="entry-title">M.Sc. Industrial Economics & Technology Manag</span>
         <span class="entry-date">2025 - 2030</span>
         <span class="entry-sub">NTNU</span>
         <p class="entry-desc">Computer Science, AI and Economics.</p>
@@ -178,7 +178,8 @@
     if (timeOfDay.getHours() <= 5) document.getElementById('greeting').textContent = "Good night";
     else if (timeOfDay.getHours() <= 9) document.getElementById('greeting').textContent = "Good morning";
     else if (timeOfDay.getHours() <= 16) document.getElementById('greeting').textContent = "Good day";
-    else document.getElementById('greeting').textContent = "Good evening";
+    else if (timeOfDay.getHours() <= 21) document.getElementById('greeting').textContent = "Good evening";
+    else document.getElementById('greeting').textContent = "Good night";
   })();
 
   // Compute current age from birthdate
