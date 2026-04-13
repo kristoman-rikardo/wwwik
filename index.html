@@ -10,6 +10,7 @@
   <link rel="canonical" href="https://wwwik.no" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="alternate" type="application/rss+xml" title="Kristoffer Strømdal Wik" href="/rss.xml" />
 </head>
 <body>
 <div class="wrap">
@@ -84,6 +85,24 @@
         <p class="entry-desc">Experimenting with a OpenClaw-based agentic system to properly coach me in sports and in general l(a)if (haha). Integrated skills for strava, plugga, and many more, in addition to building a custom gbrains-setup. </p>
       </div>
 
+      <div class="entry">
+        <span class="entry-title"><a href="https://github.com/kristoman-rikardo/mosaic-project">Mosaic (not the browser)</a></span>
+        <span class="entry-date">April 2026</span>
+        <span class="entry-sub">Non-vibe coding</span>
+        <p class="entry-desc">Made a mosaic generator from scratch in Java and a front-end with quite ugly JavaFX-elements. My most ambitious non-AI-related project yet, very fun but slow. Still managed to get it done in under 16 hrs.</p>
+      </div>
+
+
+      <div class="entry">
+        <span class="entry-title"><a href="https://vibedoc.ai">Vibedoc.ai</a></span>
+        <span class="entry-date">March 2025</span>
+        <span class="entry-sub">AI</span>
+        <p class="entry-desc">Made a code-docs generator for the advent of vibe coding. Mostly a sick domain name, hmu if you want to buy it.</p>
+      </div>
+
+      <p style="margin-top:1rem;">
+        <a href="#" id="toggle-projects" style="font-size:.88rem; cursor:pointer;">Show more ↓</a>
+      </p>
     </section>
 
     <!-- ── Experience ─────────────────────────── -->
@@ -147,6 +166,7 @@
   <footer>
     <span>Kristoffer Strømdal Wik</span>
     <span><a href="https://wwwik.no">wwwik.no</a></span>
+    <span><a href="rss.xml">RSS</a></span>
   </footer>
 
 </div>
@@ -202,6 +222,31 @@
     const d = new Date(iso + 'T00:00:00');
     return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
   }
+
+  // Automatisk skjuling av prosjekter etter de 4 første
+  (function () {
+    const projects = document.querySelectorAll('#projects .entry');
+    const toggleBtn = document.getElementById('toggle-projects');
+    let isHidden = true;
+
+    if (projects.length > 4) {
+      for (let i = 4; i < projects.length; i++) {
+        projects[i].style.display = 'none';
+      }
+    } else {
+      toggleBtn.style.display = 'none'; 
+    }
+
+    toggleBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      isHidden = !isHidden; 
+      
+      for (let i = 4; i < projects.length; i++) {
+        projects[i].style.display = isHidden ? 'none' : 'block';
+      }
+      this.textContent = isHidden ? 'Show more ↓' : 'Show less ↑';
+    });
+  })();
 </script>
 </body>
 </html>

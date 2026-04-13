@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>Kristoffer Strømdal Wik</title>
+  <link>https://wwwik.no</link>
+  <description>Writing and projects by Kristoffer.</description>
+
+  <item>
+    <title>I am scared for my Laif!</title>
+    <link>https://wwwik.no/blog.html#laif</link>
+    <description>Experimenting with a OpenClaw-based agentic system to properly coach me in sports and in general l(a)if (haha) sh leif.</description>
+    <pubDate>Sun, 12 Apr 2026 22:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>Hi Claude, please make it say "Hello, world"</title>
+    <link>https://wwwik.no/blog.html#welcome</link>
+    <description>First post on wwwik.no. Will probably forget to write any more.</description>
+    <pubDate>Thu, 09 Apr 2026 22:00:00 GMT</pubDate>
+  </item>
+</channel>
+</rss>

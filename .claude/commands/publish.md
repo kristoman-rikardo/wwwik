@@ -17,6 +17,7 @@ The user wants to publish content to their personal site at wwwik.no.
 7. Prepend the new post to the `"posts"` array in `posts.json` (newest first).
 8. Write the updated `posts.json`.
 9. Confirm: "Published: **{title}** — view at `blog.html#{slug}`"
+10. Always run `node build-rss.js` lastly to add the most recent blog post to the rss.xml file. 
 
 ## Schema
 
