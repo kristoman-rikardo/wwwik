@@ -1,6 +1,15 @@
 {
   "posts": [
     {
+      "id": "vibe dystopia",
+      "type": "blog",
+      "title": "The death of the fun project",
+      "date": "2026-04-14",
+      "summary": "What are we supposed to live off of after the oil? Making AI B2B SaaSses on our spare time?",
+      "content": "As (basic) technical competence becomes superfluous, or at least as a code project (by an (incompetent) individual) will never be impressive anymore, because it can be or is vibe coded, how can you stand out, be proud of things you make, and do cool meaningful things? If I build something slightly ambitious, e.g. a platform for backtesting quantitative algorhitms on prediction markets (e.g. polymarket), this won't be as cool or impressive as 7 years ago, because now everyone can do it with the help of AI tols. Then it's suddenly physical things, robotics, production engineering and other stuff AI doesn't have hands for that you have to do to stand out. It removes some of the joy of computers, that it's not as honorable anymore. It's a bit like when black air forces or moncler got ruined by all the gangstrs tending to wear it. Or fur coats by all the prostitutes. Or bouldering by all the crossfitters. In isolation it's still cool, but everyone has associations to something tacky or less honorable - so how cool is it? My question is what to do, which projects, what should I learn more about and interest myself in? Like they say at Mac, i believe two things: I have a hypothesis that metaprojects are a way to go, meaning projects where you create or improve/exploit these AI tools in the best possible way, but they only work in an interim period. Another hypothesis is that you simply have to upscale the projects, meaning that where it used to take a week to put together a crossword solver back in the day, you now have to spend a week building a trading platform for cobalt(?, much more ambitious, I imagine). They both have snags, the former that it has a limited time period (eventually everything will catch up or become too complex for \"the regular joe\"), and the latter has two snags: it will only accellarate, so the complexity here will increase exponentially, and it gets expensive, in tokens, hosting and other resource usage. Besides there's a limited number of vertically integrated ai-native (r)ecommerce platforms for dog socks that are needed. So we'll see then. AI is here to stay, and this is the worst the agents will ever be.",
+      "tags": ["ai", "essay", "semi-meta"]
+    },
+    {
       "id": "laif",
       "type": "blog",
       "title": "I am scared for my Laif!",
