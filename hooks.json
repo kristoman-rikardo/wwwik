@@ -1,0 +1,7 @@
+[
+  {
+    "id": "oppdater-wwwik",
+    "execute-command": "/home/kristofferswik/deploy.sh",
+    "command-working-directory": "/home/kristofferswik"
+  }
+]
