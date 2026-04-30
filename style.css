@@ -5,8 +5,8 @@
   --surface: #f8f8f7;
   --text: #1a1a1a;
   --muted: #6b6b6b;
-  --accent: #fcf121;
-  --muteaccent: #eed66b;;
+  --accent: #fec712;
+  --muteaccent: #fcda67;;
   --border: #e5e7eb;
   --width: 680px;
 }
@@ -159,7 +159,7 @@ p { margin: 0 0 0.75rem; }
   vertical-align: middle;
   margin-right: 0.35rem;
 }
-.badge-blog        { background: #dbeafe; color: #1d4ed8; }
+.badge-blog        { background: #fff8d8; color: #d7b314; }
 .badge-achievement { background: #dcfce7; color: #166534; }
 
 /* ── Full post view ──────────────────────────── */
