@@ -208,6 +208,7 @@ p { margin: 0 0 0.75rem; }
   color: var(--muted);
   margin: 0 0 1rem;
 }
+.post-content img { max-width: 100%; height: auto; }
 .post-content strong { font-weight: 600; }
 .post-content a { color: var(--accent); }
 
