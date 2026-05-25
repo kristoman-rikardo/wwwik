@@ -249,7 +249,7 @@
       isHidden = !isHidden; 
       
       for (let i = 4; i < projects.length; i++) {
-        projects[i].style.display = isHidden ? 'none' : 'block';
+        projects[i].style.display = isHidden ? 'none' : '';
       }
       this.textContent = isHidden ? 'Show more ↓' : 'Show less ↑';
     });
