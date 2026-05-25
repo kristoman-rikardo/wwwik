@@ -1,11 +1,9 @@
 #!/bin/bash
 # Gå til produksjonsmappen
 cd /usr/share/nginx/html/
-# 1. Ta vare på eventuelle endringer du har gjort direkte på serveren
-git stash
 
-# 2. Hent den nye koden fra GitHub
-git pull
+# 1. Hent de nyeste oppdateringene fra GitHub (uten å røre filene dine enda)
+git fetch --all
 
-# 3. Pop endringene dine tilbake på toppen av den nye koden
-git stash pop
+# 2. Tving serveren til å bli en eksakt kopi av GitHub (sletter og overskriver eventuelle lokale endringer)
+git reset --hard origin/main
