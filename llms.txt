@@ -34,6 +34,7 @@ Personal site of Kristoffer Strømdal Wik (wwwik.no): writing, projects and CV. 
 
 ## Writing
 
+- [The boy who cried wolf and the people who had only heard of dogs](https://www.wwwik.no/posts/the-boy-who-cried-wolf-and-the-people-who-had-only-heard-of-.md) (2026-09-18): The boy ran into town and cried wolf, but the people had only ever heard of dogs. Neglecting the cries, the people tried petting the wolf upon its arrival. How do we balance the need for urgency with our longing for comfort, understanding and superiority?
 - [A school that fits no one might just fit everyone](https://www.wwwik.no/posts/school-debate.md) (2026-05-23): While separating students by ability might yield marginal academic gains, not doing it might be the perfect complement to the boundless cognition of machines. An op-ed adjusted for and translated to English.
 - [The road ahead: Dalai towards 2030](https://www.wwwik.no/posts/dalai-future.md) (2026-05-12): Where are we now, and what will happen to Dalai? One thing is for sure: it has been a good run.
 - [On the retirement of Karpe](https://www.wwwik.no/posts/karpe.md) (2026-04-30): Remminicent review of the sound of my youth.
