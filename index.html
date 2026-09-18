@@ -258,9 +258,19 @@
 </script>
 <script>
   // Footer: vis "Admin" i stedet for "Sign in" hvis eier er innlogget.
+  const q = new URLSearchParams(location.search);
+  const toast = (msg) => {
+    const t = document.createElement('div'); t.className = 'toast'; t.textContent = msg; document.body.appendChild(t);
+    setTimeout(() => t.classList.add('show'), 20); setTimeout(() => t.classList.remove('show'), 3200); setTimeout(() => t.remove(), 3800);
+  };
+  if (q.has('signed-out')) toast('Signed out');
   fetch('/auth/me', { credentials: 'same-origin' }).then(r => r.ok ? r.json() : null).then(m => {
-    if (m && m.signedIn) { const a = document.getElementById('signin'); a.textContent = 'Admin'; a.href = '/admin/'; }
+    if (m && m.signedIn) {
+      const a = document.getElementById('signin'); a.textContent = 'Admin'; a.href = '/admin/';
+      if (q.has('signed-in')) toast('Signed in as ' + m.email);
+    }
   }).catch(() => {});
+  if (q.has('signed-in') || q.has('signed-out')) history.replaceState(null, '', location.pathname + location.hash);
 </script>
 </body>
 </html>

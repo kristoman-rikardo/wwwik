@@ -239,3 +239,11 @@ footer {
   .entry-date { text-align: left; }
   footer { flex-direction: column; }
 }
+
+/* ── Toast (sign in / out) ───────────────────── */
+.toast {
+  position: fixed; left: 50%; bottom: 1.5rem; transform: translate(-50%, 1rem);
+  background: var(--text); color: var(--bg); font-size: 0.82rem; padding: 0.5rem 0.9rem; border-radius: 4px;
+  opacity: 0; transition: opacity .2s, transform .2s; pointer-events: none; z-index: 10;
+}
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
