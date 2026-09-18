@@ -6,7 +6,8 @@
   <meta property="og:title" content="Kristoffer Strømdal Wik">
   <meta property="og:image" content="/castle.png">
   <title>Kristoffer Strømdal Wik</title>
-  <meta name="description" content="Kristoffer Strømdal Wik" />
+  <!-- build:meta-description --><meta name="description" content="I was formerly among the youngest people ever. Now, I am 20 years old. I&#39;m from Norway, thus I love mountains, skiing and Jon Fosse. I run, write and do projects. Here, I will only do the latter two." /><!-- /build:meta-description -->
+  <!-- build:jsonld --><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Kristoffer Strømdal Wik","givenName":"Kristoffer","url":"https://wwwik.no","description":"I was formerly among the youngest people ever. Now, I am 20 years old. I'm from Norway, thus I love mountains, skiing and Jon Fosse. I run, write and do projects. Here, I will only do the latter two.","sameAs":["https://github.com/kristoman-rikardo","https://www.linkedin.com/in/kristofferswik/"],"jobTitle":"Co-founder & CEO","worksFor":{"@type":"Organization","name":"Dalai"},"alumniOf":[{"@type":"EducationalOrganization","name":"NTNU"}],"knowsAbout":["Dalai","Askask","Plugga","OpenClaw Laif","Mosaic (not the browser)","make3d","Vibedoc.ai"]}</script><!-- /build:jsonld -->
   <link rel="canonical" href="https://wwwik.no" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2">
@@ -27,16 +28,63 @@
 
     <!-- ── About ──────────────────────────────── -->
     <section id="about">
-      <h1> <span id="greeting"></span>, I'm <span id="cv-name">Kristoffer</span>.</h1>
-      <p id="cv-bio"></p>
-      <div class="contact-links" id="cv-links"></div>
+      <h1> <span id="greeting"></span>, I'm <span id="cv-name"><!-- build:cv-name -->Kristoffer<!-- /build:cv-name --></span>.</h1>
+      <p id="cv-bio">
+        <!-- build:cv-bio -->I was formerly among the youngest people ever. Now, I am <span id="my-age">20</span> years old.
+        <br> I&#39;m from Norway, thus I love mountains, skiing and Jon Fosse.
+        <br> I run, write and do projects. Here, I will only do the latter two.<!-- /build:cv-bio -->
+      </p>
+      <div class="contact-links" id="cv-links">
+        <!-- build:cv-links --><a href="mailto:kristofferswik@gmail.com">Email</a>
+        <a href="https://github.com/kristoman-rikardo" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/kristofferswik/" target="_blank" rel="noopener">LinkedIn</a><!-- /build:cv-links -->
+      </div>
     </section>
 
     <!-- ── Recent writing ─────────────────────── -->
     <section id="recent">
       <h2>Recent writing</h2>
-      <ul class="post-list" id="recent-posts">
-        <li style="color:var(--muted);font-size:.88rem">Loading…</li>
+      <ul class="post-list" id="recent-posts"><!-- build:recent-posts -->
+        <li class="post-item">
+          <span class="post-date">23 May 2026</span>
+          <div class="post-body">
+            <div class="post-title">
+              <span class="badge badge-blog">Post</span>
+              <a href="blog.html#school-debate">A school that fits no one might just fit everyone</a>
+            </div>
+            <p class="post-summary">While separating students by ability might yield marginal academic gains, not doing it might be the perfect complement to the boundless cognition of machines. An op-ed adjusted for and translated to English.</p>
+          </div>
+        </li>
+        <li class="post-item">
+          <span class="post-date">12 May 2026</span>
+          <div class="post-body">
+            <div class="post-title">
+              <span class="badge badge-blog">Post</span>
+              <a href="blog.html#dalai-future">The road ahead: Dalai towards 2030</a>
+            </div>
+            <p class="post-summary">Where are we now, and what will happen to Dalai? One thing is for sure: it has been a good run.</p>
+          </div>
+        </li>
+        <li class="post-item">
+          <span class="post-date">30 Apr 2026</span>
+          <div class="post-body">
+            <div class="post-title">
+              <span class="badge badge-blog">Post</span>
+              <a href="blog.html#karpe">On the retirement of Karpe</a>
+            </div>
+            <p class="post-summary">Remminicent review of the sound of my youth.</p>
+          </div>
+        </li>
+        <li class="post-item">
+          <span class="post-date">14 Apr 2026</span>
+          <div class="post-body">
+            <div class="post-title">
+              <span class="badge badge-blog">Post</span>
+              <a href="blog.html#vibe-dystopia">The death of the fun project</a>
+            </div>
+            <p class="post-summary">What are we supposed to live off of after the oil? Making AI B2B SaaSses on our spare time?</p>
+          </div>
+        </li><!-- /build:recent-posts -->
       </ul>
       <p style="margin-top:1rem;">
         <a href="blog.html" style="font-size:.88rem">All posts →</a>
@@ -46,7 +94,50 @@
     <!-- ── CV: rendered from cv.json (edit in /admin/) ── -->
     <section id="projects">
       <h2>Projects</h2>
-      <div id="cv-projects"></div>
+      <div id="cv-projects"><!-- build:cv-projects -->
+      <div class="entry">
+        <span class="entry-title"><a href="https://dalai.no" target="_blank" rel="noopener">Dalai</a></span>
+        <span class="entry-date">January 2024</span>
+        <span class="entry-sub">Business / AI</span>
+        <p class="entry-desc">Company started with my friend Simen. I sat as the CEO working with the great Mattis Holt as chairman. Learned lots, 30 customers, six-figured revenue.</p>
+      </div>
+      <div class="entry">
+        <span class="entry-title"><a href="https://askask.ai" target="_blank" rel="noopener">Askask</a></span>
+        <span class="entry-date">June 2025</span>
+        <span class="entry-sub">AI / E-commerce</span>
+        <p class="entry-desc">Bet largely on embedded AI agents for e-commerce. Got two pilot customers, downturn for norwegian e-commerce and failed spectacularly.</p>
+      </div>
+      <div class="entry">
+        <span class="entry-title"><a href="https://plugga.no" target="_blank" rel="noopener">Plugga</a></span>
+        <span class="entry-date">October 2025</span>
+        <span class="entry-sub">Productivity</span>
+        <p class="entry-desc">Exam and study planner/tracker with a exam set database for rating, discussing and viewing exams including grade distributions. Of course skills for agentic systems to write and pull information and integrated with Google and Apple calendar.</p>
+      </div>
+      <div class="entry">
+        <span class="entry-title"><a href="blog.html#laif">OpenClaw Laif</a></span>
+        <span class="entry-date">March 2026</span>
+        <span class="entry-sub">AI / Producivity</span>
+        <p class="entry-desc">Experimenting with a OpenClaw-based agentic system to properly coach me in sports and in general l(a)if (haha). Integrated skills for strava, plugga, and many more, in addition to building a custom gbrains-setup.</p>
+      </div>
+      <div class="entry">
+        <span class="entry-title"><a href="https://github.com/kristoman-rikardo/mosaic-project" target="_blank" rel="noopener">Mosaic (not the browser)</a></span>
+        <span class="entry-date">April 2026</span>
+        <span class="entry-sub">Non-vibe coding</span>
+        <p class="entry-desc">Made a mosaic generator from scratch in Java and a front-end with quite ugly JavaFX-elements. My most ambitious non-AI-related project yet, very fun but slow. Still managed to get it done in under 16 hrs.</p>
+      </div>
+      <div class="entry">
+        <span class="entry-title"><a href="https://github.com/kristoman-rikardo/make3d" target="_blank" rel="noopener">make3d</a></span>
+        <span class="entry-date">May 2026</span>
+        <span class="entry-sub">Computer Vision</span>
+        <p class="entry-desc">Currently building a fast and lightweight tool for generating simple to moderatly complex 3d renderings from a 2d photos. Difficult and fun.</p>
+      </div>
+      <div class="entry">
+        <span class="entry-title"><a href="https://vibedoc.ai" target="_blank" rel="noopener">Vibedoc.ai</a></span>
+        <span class="entry-date">March 2025</span>
+        <span class="entry-sub">AI</span>
+        <p class="entry-desc">Made a code-docs generator for the advent of vibe coding. Mostly a sick domain name, hmu if you want to buy it.</p>
+      </div><!-- /build:cv-projects -->
+      </div>
       <p style="margin-top:1rem;">
         <a href="#" id="toggle-projects" style="font-size:.88rem; cursor:pointer; display:none;">Show more ↓</a>
       </p>
@@ -54,17 +145,49 @@
 
     <section id="experience">
       <h2>Experience</h2>
-      <div id="cv-experience"></div>
+      <div id="cv-experience"><!-- build:cv-experience -->
+      <div class="entry">
+        <span class="entry-title">Co-founder &amp; CEO</span>
+        <span class="entry-date">2024 -</span>
+        <span class="entry-sub">Dalai</span>
+        <p class="entry-desc">Began doing custom reasoning LLM workflows for local SMBs, such as Hunderfossen, Kongeparken and Birken. Eventually turned to AI consulting projects for larger companies such as Standard and Sintef.</p>
+      </div>
+      <div class="entry">
+        <span class="entry-title">Analyst</span>
+        <span class="entry-date">2025 -</span>
+        <span class="entry-sub">InFi</span>
+        <p class="entry-desc">Analysing and investing in Norwegian equities.</p>
+      </div>
+      <div class="entry">
+        <span class="entry-title">International Athlete</span>
+        <span class="entry-date">2020 -</span>
+        <span class="entry-sub">Skiing and Orienteering federations</span>
+        <p class="entry-desc">5 times Norwegian champion, youth European champion, competed in youth Olympics. National team athlete in Ski Mountaineering and Orienteering.</p>
+      </div>
+      <div class="entry">
+        <span class="entry-title">Coach</span>
+        <span class="entry-date">2021 - 2025</span>
+        <span class="entry-sub">Freidig and Nidelv</span>
+        <p class="entry-desc">Planned and lead training camps and weekly sessions for childeren ages 4 to 14 in several sports such as football, basket, athletics and orienteering.</p>
+      </div><!-- /build:cv-experience -->
+      </div>
     </section>
 
     <section id="education">
       <h2>Education</h2>
-      <div id="cv-education"></div>
+      <div id="cv-education"><!-- build:cv-education -->
+      <div class="entry">
+        <span class="entry-title">M.Sc. Industrial Economics &amp; Technology Management</span>
+        <span class="entry-date">2025 - 2030</span>
+        <span class="entry-sub">NTNU</span>
+        <p class="entry-desc">Computer Science, AI and Economics.</p>
+      </div><!-- /build:cv-education -->
+      </div>
     </section>
 
     <section id="skills">
       <h2>Skills</h2>
-      <div class="skills" id="cv-skills"></div>
+      <div class="skills" id="cv-skills"><!-- build:cv-skills -->Funny, kind, good-looking and humble.<!-- /build:cv-skills --></div>
     </section>
 
   </main>
@@ -116,9 +239,9 @@
         `<a href="${esc(l.href)}"${/^https?:/.test(l.href) ? ' target="_blank" rel="noopener"' : ''}>${esc(l.label)}</a>`).join('');
       for (const k of ['projects', 'experience', 'education']) document.getElementById('cv-' + k).innerHTML = (cv[k] || []).map(entryHtml).join('');
       document.getElementById('cv-skills').textContent = cv.skills || '';
-      setupProjectToggle();
     })
-    .catch(() => {});
+    .catch(() => {})
+    .finally(setupProjectToggle);
 
   // Load recent posts from posts.json
   fetch('posts.json')
@@ -143,10 +266,7 @@
         </li>
       `).join('');
     })
-    .catch(() => {
-      document.getElementById('recent-posts').innerHTML =
-        '<li style="color:var(--muted);font-size:.88rem">No posts yet.</li>';
-    });
+    .catch(() => {});
 
   function fmtDate(iso) {
     const d = new Date(iso + 'T00:00:00');
