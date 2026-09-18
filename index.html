@@ -173,6 +173,7 @@
     <span>Kristoffer Strømdal Wik</span>
     <span><a href="https://wwwik.no">wwwik.no</a></span>
     <span><a href="rss.xml">RSS</a></span>
+    <span><a href="/auth/login" id="signin">Sign in</a></span>
   </footer>
 
 </div>
@@ -254,6 +255,12 @@
       this.textContent = isHidden ? 'Show more ↓' : 'Show less ↑';
     });
   })();
+</script>
+<script>
+  // Footer: vis "Admin" i stedet for "Sign in" hvis eier er innlogget.
+  fetch('/auth/me', { credentials: 'same-origin' }).then(r => r.ok ? r.json() : null).then(m => {
+    if (m && m.signedIn) { const a = document.getElementById('signin'); a.textContent = 'Admin'; a.href = '/admin/'; }
+  }).catch(() => {});
 </script>
 </body>
 </html>
