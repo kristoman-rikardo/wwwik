@@ -1,0 +1,219 @@
+# Kristoffer Strømdal Wik
+
+> I was formerly among the youngest people ever. Now, I am 20 years old. I'm from Norway, thus I love mountains, skiing and Jon Fosse. I run, write and do projects. Here, I will only do the latter two.
+
+Personal site of Kristoffer Strømdal Wik (wwwik.no): writing, projects and CV. Content is in English. Each post is also available as Markdown at the .md link.
+
+## About
+
+- Links: Email mailto:kristofferswik@gmail.com, GitHub https://github.com/kristoman-rikardo, LinkedIn https://www.linkedin.com/in/kristofferswik/
+- Skills: Funny, kind, good-looking and humble.
+
+## Projects
+
+- **Dalai** (January 2024) — Business / AI — https://dalai.no: Company started with my friend Simen. I sat as the CEO working with the great Mattis Holt as chairman. Learned lots, 30 customers, six-figured revenue.
+- **Askask** (June 2025) — AI / E-commerce — https://askask.ai: Bet largely on embedded AI agents for e-commerce. Got two pilot customers, downturn for norwegian e-commerce and failed spectacularly.
+- **Plugga** (October 2025) — Productivity — https://plugga.no: Exam and study planner/tracker with a exam set database for rating, discussing and viewing exams including grade distributions. Of course skills for agentic systems to write and pull information and integrated with Google and Apple calendar.
+- **OpenClaw Laif** (March 2026) — AI / Producivity — blog.html#laif: Experimenting with a OpenClaw-based agentic system to properly coach me in sports and in general l(a)if (haha). Integrated skills for strava, plugga, and many more, in addition to building a custom gbrains-setup.
+- **Mosaic (not the browser)** (April 2026) — Non-vibe coding — https://github.com/kristoman-rikardo/mosaic-project: Made a mosaic generator from scratch in Java and a front-end with quite ugly JavaFX-elements. My most ambitious non-AI-related project yet, very fun but slow. Still managed to get it done in under 16 hrs.
+- **make3d** (May 2026) — Computer Vision — https://github.com/kristoman-rikardo/make3d: Currently building a fast and lightweight tool for generating simple to moderatly complex 3d renderings from a 2d photos. Difficult and fun.
+- **Vibedoc.ai** (March 2025) — AI — https://vibedoc.ai: Made a code-docs generator for the advent of vibe coding. Mostly a sick domain name, hmu if you want to buy it.
+
+## Experience
+
+- **Visiting Investment Analyst** (2026 -) — Viking Growth: Working part time with B2B SaaS at the Nordic software investor.
+- **Co-founder & CEO** (2024 - 2026) — Dalai: Began doing custom reasoning LLM workflows for local SMBs, such as Hunderfossen, Kongeparken and Birken. Eventually turned to AI consulting projects for larger companies such as Standard and Sintef.
+- **Financial Journalist** (Summer 2026) — Finansavisen: Wrote for the Norwegian financial daily. Highest-converting intern.
+- **Analyst** (2025 -) — InFi: Analysing and investing in Norwegian equities.
+- **International Athlete** (2020 -) — Skiing and Orienteering federations: 5 times Norwegian champion, youth European champion, competed in youth Olympics. National team athlete in Ski Mountaineering and Orienteering.
+- **Coach** (2021 - 2025) — Freidig and Nidelv: Planned and lead training camps and weekly sessions for childeren ages 4 to 14 in several sports such as football, basket, athletics and orienteering.
+
+## Education
+
+- **M.Sc. Industrial Economics & Technology Management** (2025 - 2030) — NTNU: Computer Science, AI and Economics.
+
+## Writing
+
+---
+
+# A school that fits no one might just fit everyone
+
+> While separating students by ability might yield marginal academic gains, not doing it might be the perfect complement to the boundless cognition of machines. An op-ed adjusted for and translated to English.
+
+Published 2026-05-23 by Kristoffer Strømdal Wik · https://www.wwwik.no/posts/school-debate.html · Tags: ai, debate, school
+
+In the debate about a tiered school system, it is fitting to lean on Thomas Mann. In *The Magic Mountain*, he writes: "A man lives not only his personal life as an individual, but also, consciously or unconsciously, the life of his epoch and his contemporaries." To understand our epoch and be equipped for the upheavals around us, academically and practically inclined students must challenge each other. Therefore, schools must be a place where different abilities and perspectives meet.
+
+I graduated from high school last year, and I reflect on my own education with the question of academic tracking in mind. I do not recall that learning the circumference of a circle early on was what shaped me the most. Rather, it was discussions with students whose intuition was completely different from my own that taught me the most. The question of tracking becomes even more pressing when looking at the labor market following the advent of artificial intelligence. I believe, however, that this question pushes us in favor of a comprehensive school system. Even AI evangelist and Oil Fund CEO Nicolai Tangen points in this direction: "We will end up talking to each other and getting closer to one another as humans," as mood music, visual arts, and jobs are replaced by the probability models from Silicon Valley.
+
+The longer we hold on to a shared foundation of knowledge and values throughout schooling, the more resilient our democracy becomes. Students discussing Columbus, conjugations and cosines across ability levels is a virtue greater than the cult of the individual and specialization. Although it might cost meager percentage points on *Nasjonale prøver*, friction is central to building unity and learning from one another. This friction is not about pulling everyone toward the median, but about learning translation skills and empathy. The ability to collaborate across disciplines will remain paramount when AI reduces the scarcity of intelligence. It is certainly important that students receive challenges tailored to their own level, but we must protect the platforms we have for understanding our contemporaries, especially when democracy is facing headwinds.
+
+Due to AI's current lack of hands, future jobs may lean closer to the practical domain. Perhaps practically inclined students in a tiered school – often regarded as the losers of tiering – could gain something from this, but overall, it would still be a loss for both parties. By isolating the strongest academic performers in a tracked school, we deprive them of the opportunity to acquire what machines lack. It is a disservice to hyper-specialize the strongest students for the sake of learning Pythagoras’ early, at the expense of social and interdisciplinary robustness.
+
+A school with friction, where everyone learns to collaborate across differences, is a perfect complement to the boundless cognition of machines. Even in a tiered school, the top students will struggle to surpass the cognitive capacity of the AI models we will surround ourselves with in a few years, if not today. Whether or not the AI models will manage to navigate the life of its epoch and contemporaries will remain a question for another time.
+
+---
+
+# The road ahead: Dalai towards 2030
+
+> Where are we now, and what will happen to Dalai? One thing is for sure: it has been a good run.
+
+Published 2026-05-12 by Kristoffer Strømdal Wik · https://www.wwwik.no/posts/dalai-future.html · Tags: dalai, project
+
+## The road ahead: Dalai towards 2030
+
+### Introduction
+So far in 2026, the main shareholders and management, Simen Spets Storhov and Kristoffer Strømdal Wik, have realized that we just do not have the same capacity for intensity and operations as we did in 2025. Dalai has been a fantastic project, and we have learned more than we could ever have imagined in our wildest dreams. Thanks to amazing supporters, team members, and client collaborations, we have had a great time and built something that actually became real. 
+
+Even though the title clearly looks to the future, this opening paragraph is written in the past tense, almost like a memorial. It is clear that the situation, both in terms of the market and the life situation of the founders, is quite different from when we started this project, slightly disillusioned, two years ago. Geographic distance in the team has made coordination harder, and tough priorities in our academic careers have limited our free time. Because of this, it is absolutely crucial that we look at the time ahead with a realistic and nuanced view.
+
+### Looking back
+Right now, it is sad to admit that we cannot keep going with the passive operations we have today. The best thing would have been to just ride the wave of motivation we had during our strong growth phase in the spring of 2025. It is always easy to connect the dots looking back, and it is always easier to be wise after the fact. Even though this post is mainly about figuring out the road ahead, it is always useful to have some concrete background on what Dalai has actually been.
+
+In the spring of 2024, I was invited by Sivert Folgerø and Sven Nevin to be a sparring partner for an AI project they called KIhjelp. The goal was to build AI chatbots using recipes Nevin had seen on TikTok. Over the summer, the project took a more formal shape, and the discussions with our first client, Huma AS (an Oslo-based HR platform), evolved. Simen came on board after the summer on my initiative, and our desire to grow increased even more. 
+
+Clients slowly started coming in, and our technology got more advanced as we tried and failed. We landed local but important clients, including the World Ski Championships (Ski-VM), which was a deciding project for us. We thought we were well paid, but looking back it is easy to see that we could have been tougher on the price. More clients followed, especially sports events, and we got several pilot projects going in different segments. You can see the list of collaborations in the appendix. In particular, a sales sprint over the 2024 to 2025 new year led to strong growth in our customer base through January, February, and March of 2025. 
+
+The absolute high point happened when we, against all odds, landed a contract with Standard Norge and Standard Digital. For us at the time, they were a massive and serious player. We finally got to build something from the ground up, a truly demanding and technical project. The project was a success, and we were well paid thanks to an hourly rate put together by an unnamed partner at PwC. The project stretched from the spring, with the first formal delivery right before the summer holiday, followed by a few more rounds over the summer and fall. It was rewarding, educational, and very inspiring. Still, this was the project that made us realize something was not quite right. By the fall of 2025, we noticed that we were not dedicating enough time and resources to current projects or finding new clients.
+
+### Underlying and triggering factors
+With the risk of being wise after the fact once again, we can point to three main reasons for the downward trend. Even if it feels a bit like rubbing salt in the wound, we believe it is useful learning for future projects and our careers. 
+
+1. **The desire for pure art**
+It is a pretentious headline, but the turning point is real. A nagging thought in the back of our minds, especially for me, was that we were doing "impure art" and the IT equivalent of dropshipping. No-code software and TikTok recipes were used a lot, even though we saw ourselves as a serious company. This mental disconnect led to a desire for more "real" innovation. 
+
+We started another project called askask, which was embedded shopping assistants on product pages. We bet hard on this in the spring of 2025, mostly because of the increase in other "TikTok-inspired" competitors in the traditional chatbot space. We were no longer early movers here. This took our focus away from where we actually had customer growth. When our two pilot clients for askask cancelled at the last minute, we naively lacked a backup plan. We also did not have a concrete Go-To-Market strategy. When we realized that our biggest competitor Truste was doing much better than us, and how tight the e-commerce market was at the time, our motivation took a hit. This loss of motivation and the wrong priorities with our time and money also stopped us from growing in our normal chatbot segment. 
+
+2. **Who, where, and why?**
+Right from the start, in our very first board meeting, we were aware that our lack of organization and roles was a risk for conflict. We wanted to split the ownership based on how much work people put in. This meant an equal split between Simen and me, since we did the vast majority of the work through the fall of 2024. However, things were unclear when it came to Nevin and Folgerø's roles. The impression was that they saw their roles as something they could just step in and out of. They wanted to eat the cake without baking it. Surprisingly, this actually led to very little friction. We were clearly good at managing the unclarified things. 
+
+The main catch came when we asked the questions "where" and "why". "Where" was an issue because physical distance had been a huge advantage for Dalai before. The fact that Simen and I were always within 50 meters of each other was great for quick and informal coordination. This became a problem when Simen moved to Bergen for his Master's at NHH, and I moved to Moholt for my engineering studies at NTNU. This made things harder, and it took time and required tough choices since we both wanted to do well academically. 
+
+By asking the "why" question, we get closer to the core of what Dalai has been and what it can be going forward. The premise has always been that Dalai is a learning project. Even though we joked about million-dollar exits, the focus has been on learning. We wanted to try our best and see if it could become something. And it absolutely became something. Still, when learning is the main focus and this is not a matter of life and death, we have to let the project step aside for other ways of learning. Only time will tell if that was a foolish choice. 
+
+3. **Growing apart**
+There is not much to elaborate on here. As cliché as it is, it is probably more about Simen and I growing in a different direction than Dalai, not necessarily growing away from each other. There comes a time when you have to defend the priorities you make. When that happens, it is hard to prioritize a small IT company that does not exactly put food on the table. We are looking forward now, but we will always remember Dalai as a central pillar in our lives. 
+
+### The road ahead
+Neither Kristoffer, Simen, nor the board of directors (represented by Chairman Mattis Holt) have managed to come up with concrete proposals for what to do next. Right now, I do not have any great ideas either. What are the alternatives, really? The suggestion is that we use the time leading up to the general assembly to look at different options. 
+
+One option is of course to shut the company down completely. Another, maybe more tempting option, is to shut down operations but keep a cheap-to-run AS (limited company) that can be useful in other situations. For example, for when Simen and Kristoffer want to start something new. Hopefully, that will be something even more sustainable and innovative, but Dalai is at least a good starting point, with a little money in the bank to buy more merch or AI tokens. A third option proposed by Simen is to actively manage the capital by investing it in a portfolio. This obviously comes with a risk and also requires more effort. 
+
+We want proposals, and we welcome them in writing to kristoffer@dalai.no, verbally to Kristoffer, Simen, Mattis, or Håvard, or by phone at +47 40 29 18 87. 
+
+Thank you so much for the journey, and we look forward to Dalai's road towards 2030. Take a look at the picture below for a little throwback to the good times: 
+
+![Dalai throwback](img/snedi.jpg)
+
+Best regards,  
+Dalai Solutions AS 
+by CEO Kristoffer Strømdal Wik  
+
+________________________________  
+CEO and Board Member  
+
+Appendix: 
+List of clients based on who we collaborated with (not necessarily paid), as recalled from memory:  
+
+* Standard Norge
+* Standard Digital
+* SINTEF
+* Voiceflow
+* Ski-VM
+* Holmenkollen Skifestival
+* Norseman
+* Norway Cup
+* Birken Ski
+* Birken Sykkel
+* Birken Løp
+* Oslo Maraton
+* Norsk Friidrett
+* O-ringen
+* Hunderfossen
+* Kongeparken
+* Ekstremsportsveko
+* OnePiece
+* VPG
+* Huma
+* WANG Videregående
+* Smartwatt
+* Surf Mobility
+* Vassfjellet
+* TrenHer
+* ABES
+* Sund Folkehøgskole
+* Freidig
+
+---
+
+# On the retirement of Karpe
+
+> Remminicent review of the sound of my youth.
+
+Published 2026-04-30 by Kristoffer Strømdal Wik · https://www.wwwik.no/posts/karpe.html · Tags: review, slop
+
+I find it very sad. Some people say the duo have made the background music of their lives. I would disagree; they have indeed made my lives foreground music.
+
+Without further ado, let's delve into the best songs of the three albums released yesterday:
+
+- Pasta (feat. ???): The question marks is where it really gets interesting. Great collaborations, super punchy and aggressive yet humorous tone.
+- forever alltid in love: Cezinando feature + insane Magdi verse, what more to ask for.
+- Soccer Mom 1+2: Very fun pop song.
+- 01: A well deserved 30 minutes of silence for quarter a century of being the centre of norwegian rap and pop music.
+
+Thank you guys for reading, have a good one!
+
+---
+
+# The death of the fun project
+
+> What are we supposed to live off of after the oil? Making AI B2B SaaSses on our spare time?
+
+Published 2026-04-14 by Kristoffer Strømdal Wik · https://www.wwwik.no/posts/vibe-dystopia.html · Tags: ai, essay, semi-meta
+
+As (basic) technical competence becomes superfluous, or at least as a code project (by an (incompetent) individual) will never be impressive anymore, because it can be or is vibe coded, how can you stand out, be proud of things you make, and do cool meaningful things? If I build something slightly ambitious, e.g. a platform for backtesting quantitative algorhitms on prediction markets (e.g. polymarket), this won't be as cool or impressive as 7 years ago, because now everyone can do it with the help of AI tols. Then it's suddenly physical things, robotics, production engineering and other stuff AI doesn't have hands for that you have to do to stand out. It removes some of the joy of computers, that it's not as honorable anymore. It's a bit like when black air forces or moncler got ruined by all the gangstrs tending to wear it. Or anything by short-form content. Or bouldering by all the crossfitters. In isolation it's still cool, but everyone has associations to something tacky or less honorable - so how cool is it? My question is what to do, which projects, what should I learn more about and interest myself in? Like they say at Mac, i believe two things: I have a hypothesis that metaprojects are a way to go, meaning projects where you create or improve/exploit these AI tools in the best possible way, but they only work in an interim period. Another hypothesis is that you simply have to upscale the projects, meaning that where it used to take a week to put together a crossword solver back in the day, you now have to spend a week building a trading platform for cobalt(?, much more ambitious, I imagine). They both have snags, the former that it has a limited time period (eventually everything will catch up or become too complex for "the regular joe"), and the latter has two snags: it will only accellarate, so the complexity here will increase exponentially, and it gets expensive, in tokens, hosting and other resource usage. Besides there's a limited number of vertically integrated ai-native (r)ecommerce platforms for dog socks that are needed. So we'll see then. AI is here to stay, and this is the worst the agents will ever be.
+
+---
+
+# I am scared for my Laif!
+
+> Experimenting with a OpenClaw-based agentic system to properly coach me in sports and in general l(a)if (haha) sh leif.
+
+Published 2026-04-13 by Kristoffer Strømdal Wik · https://www.wwwik.no/posts/laif.html · Tags: ai, projects, sport
+
+I've been my own coach for a while. Needed to distrubute the load of hacing to deal with me and my training and school. Now, Laif knows me almost as good as I know myself, and I find it scary, fun and helpful.
+
+The name is a play on 'life', 'ai'(it's here to stay) and 'leif olav alnes'. 
+
+### How it works
+
+Built on OpenClaw, which is a open-sourced framwork for personal agentic AI I've been tinkering with. It's based around skills and tools for the agent to call — strava for training data, plugga for study and exam load, weather, calendar, and so on. 
+The gbrains part is a memory setup, which with some tweaking worked better for my use case. Standard RAG so he can recall my sessions, exams and life stuff n
+### Does it work?
+
+Sorta as they say in the states. It's very expensive, so I am using some of the left over tokens from Dalai. It was too complex for sonnet 4.6, so I pivoted to opus for better (and more expensive) quality. It is not scarily good, but as they say on linkedin: this is the worst they will ever be.
+
+It is cool and a steep learning curve, and I just hope not to go bankrupt due to hundreds of cron jobs and heartbeats each using millions of tokens. Take care.
+
+---
+
+# Hi Claude, please make it say "Hello, world"
+
+> First post on wwwik.no. Will probably forget to write any more.
+
+Published 2026-04-10 by Kristoffer Strømdal Wik · https://www.wwwik.no/posts/welcome.html · Tags: meta
+
+This is the first post @ **wwwik.no**.
+
+I built this as a home for my CV, projects, and occasional writing.  I want to take record of things I've worked on and i had a great idea for a domain name.
+
+### What to expect
+
+Mix of:
+- Contrary to popular belief: **NO AI SLOP** (it's true) 
+- Notes on things I'm building
+- Accomplishments in a braggy way 
+- Accomplishments in a humble way 
+- Thoughts that I write procrastination essays about
+
+Feel free to contact me if you read anything on here.

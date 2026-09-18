@@ -1,0 +1,47 @@
+# Kristoffer Strømdal Wik
+
+> I was formerly among the youngest people ever. Now, I am 20 years old. I'm from Norway, thus I love mountains, skiing and Jon Fosse. I run, write and do projects. Here, I will only do the latter two.
+
+Personal site of Kristoffer Strømdal Wik (wwwik.no): writing, projects and CV. Content is in English. Each post is also available as Markdown at the .md link.
+
+## About
+
+- Links: Email mailto:kristofferswik@gmail.com, GitHub https://github.com/kristoman-rikardo, LinkedIn https://www.linkedin.com/in/kristofferswik/
+- Skills: Funny, kind, good-looking and humble.
+
+## Projects
+
+- **Dalai** (January 2024) — Business / AI — https://dalai.no: Company started with my friend Simen. I sat as the CEO working with the great Mattis Holt as chairman. Learned lots, 30 customers, six-figured revenue.
+- **Askask** (June 2025) — AI / E-commerce — https://askask.ai: Bet largely on embedded AI agents for e-commerce. Got two pilot customers, downturn for norwegian e-commerce and failed spectacularly.
+- **Plugga** (October 2025) — Productivity — https://plugga.no: Exam and study planner/tracker with a exam set database for rating, discussing and viewing exams including grade distributions. Of course skills for agentic systems to write and pull information and integrated with Google and Apple calendar.
+- **OpenClaw Laif** (March 2026) — AI / Producivity — blog.html#laif: Experimenting with a OpenClaw-based agentic system to properly coach me in sports and in general l(a)if (haha). Integrated skills for strava, plugga, and many more, in addition to building a custom gbrains-setup.
+- **Mosaic (not the browser)** (April 2026) — Non-vibe coding — https://github.com/kristoman-rikardo/mosaic-project: Made a mosaic generator from scratch in Java and a front-end with quite ugly JavaFX-elements. My most ambitious non-AI-related project yet, very fun but slow. Still managed to get it done in under 16 hrs.
+- **make3d** (May 2026) — Computer Vision — https://github.com/kristoman-rikardo/make3d: Currently building a fast and lightweight tool for generating simple to moderatly complex 3d renderings from a 2d photos. Difficult and fun.
+- **Vibedoc.ai** (March 2025) — AI — https://vibedoc.ai: Made a code-docs generator for the advent of vibe coding. Mostly a sick domain name, hmu if you want to buy it.
+
+## Experience
+
+- **Visiting Investment Analyst** (2026 -) — Viking Growth: Working part time with B2B SaaS at the Nordic software investor.
+- **Co-founder & CEO** (2024 - 2026) — Dalai: Began doing custom reasoning LLM workflows for local SMBs, such as Hunderfossen, Kongeparken and Birken. Eventually turned to AI consulting projects for larger companies such as Standard and Sintef.
+- **Financial Journalist** (Summer 2026) — Finansavisen: Wrote for the Norwegian financial daily. Highest-converting intern.
+- **Analyst** (2025 -) — InFi: Analysing and investing in Norwegian equities.
+- **International Athlete** (2020 -) — Skiing and Orienteering federations: 5 times Norwegian champion, youth European champion, competed in youth Olympics. National team athlete in Ski Mountaineering and Orienteering.
+- **Coach** (2021 - 2025) — Freidig and Nidelv: Planned and lead training camps and weekly sessions for childeren ages 4 to 14 in several sports such as football, basket, athletics and orienteering.
+
+## Education
+
+- **M.Sc. Industrial Economics & Technology Management** (2025 - 2030) — NTNU: Computer Science, AI and Economics.
+
+## Writing
+
+- [A school that fits no one might just fit everyone](https://www.wwwik.no/posts/school-debate.md) (2026-05-23): While separating students by ability might yield marginal academic gains, not doing it might be the perfect complement to the boundless cognition of machines. An op-ed adjusted for and translated to English.
+- [The road ahead: Dalai towards 2030](https://www.wwwik.no/posts/dalai-future.md) (2026-05-12): Where are we now, and what will happen to Dalai? One thing is for sure: it has been a good run.
+- [On the retirement of Karpe](https://www.wwwik.no/posts/karpe.md) (2026-04-30): Remminicent review of the sound of my youth.
+- [The death of the fun project](https://www.wwwik.no/posts/vibe-dystopia.md) (2026-04-14): What are we supposed to live off of after the oil? Making AI B2B SaaSses on our spare time?
+- [I am scared for my Laif!](https://www.wwwik.no/posts/laif.md) (2026-04-13): Experimenting with a OpenClaw-based agentic system to properly coach me in sports and in general l(a)if (haha) sh leif.
+- [Hi Claude, please make it say "Hello, world"](https://www.wwwik.no/posts/welcome.md) (2026-04-10): First post on wwwik.no. Will probably forget to write any more.
+
+## Optional
+
+- [Full content of all posts](https://www.wwwik.no/llms-full.txt)
+- [RSS feed](https://www.wwwik.no/rss.xml)

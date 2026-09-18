@@ -21,7 +21,8 @@ data.posts.forEach(post => {
   rss += `
   <item>
     <title>${post.title}</title>
-    <link>https://wwwik.no/blog.html#${post.id}</link>
+    <link>https://www.wwwik.no/posts/${post.id}.html</link>
+    <guid>https://www.wwwik.no/posts/${post.id}.html</guid>
     <description>${post.summary}</description>
     <pubDate>${pubDate}</pubDate>
   </item>`;

@@ -16,7 +16,7 @@ The user wants to publish content to their personal site at wwwik.no.
 6. Set `date` to today's date (`YYYY-MM-DD`).
 7. Prepend the new post to the `"posts"` array in `posts.json` (newest first).
 8. Write the updated `posts.json`.
-9. Confirm: "Published: **{title}** — view at `blog.html#{slug}`"
+9. Confirm: "Published: **{title}** — view at `/posts/{slug}.html`"
 10. Always run `node build-rss.js` and then `node build-site.js` lastly. The first updates rss.xml, the second bakes the newest posts and the CV into index.html.
 
 ## Schema

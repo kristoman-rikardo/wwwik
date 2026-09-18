@@ -3,6 +3,9 @@
 // Innholdet ligger dermed i selve HTML-en for søkemotorer og lesere uten JavaScript;
 // JavaScript på siden oppdaterer bare alderen og eventuelle endringer etterpå.
 const fs = require('fs');
+const path = require('path');
+const { marked } = require('./vendor/marked.min.js');
+const SITE = 'https://www.wwwik.no';
 
 const cv = JSON.parse(fs.readFileSync('cv.json', 'utf8'));
 const posts = JSON.parse(fs.readFileSync('posts.json', 'utf8')).posts;
@@ -27,7 +30,7 @@ const recent = [...posts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 
           <div class="post-body">
             <div class="post-title">
               <span class="badge badge-${p.type === 'achievement' ? 'achievement' : 'blog'}">${p.type === 'achievement' ? 'Achievement' : 'Post'}</span>
-              <a href="blog.html#${esc(p.id)}">${esc(p.title)}</a>
+              <a href="/posts/${esc(p.id)}.html">${esc(p.title)}</a>
             </div>
             <p class="post-summary">${esc(p.summary)}</p>
           </div>
@@ -66,3 +69,138 @@ for (const [id, content] of Object.entries(blocks)) {
 if (missing.length) { console.error('Mangler markører i index.html:', missing.join(', ')); process.exit(1); }
 fs.writeFileSync('index.html', html);
 console.log('✅ index.html bygget fra cv.json og posts.json');
+// ── Egen side per innlegg (HTML + Markdown), bakt liste i blog.html, sitemap, llms.txt ──
+const sorted = [...posts].sort((a, b) => b.date.localeCompare(a.date));
+const badge = (p) => `<span class="badge badge-${p.type === 'achievement' ? 'achievement' : 'blog'}">${p.type === 'achievement' ? 'Achievement' : 'Post'}</span>`;
+const listItem = (p) => `
+        <li class="post-item">
+          <span class="post-date">${fmtDate(p.date)}</span>
+          <div class="post-body">
+            <div class="post-title">${badge(p)} <a href="/posts/${esc(p.id)}.html">${esc(p.title)}</a></div>
+            <p class="post-summary">${esc(p.summary)}</p>
+          </div>
+        </li>`;
+
+const chrome = (title, description, body, extraHead = '') => `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>${esc(title)}</title>
+  <meta name="description" content="${esc(description)}" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2">
+  <link rel="alternate" type="application/rss+xml" title="Kristoffer Strømdal Wik" href="/rss.xml" />
+${extraHead}</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="site-name"><a href="/">Kristoffer Strømdal Wik</a></div>
+    <nav>
+      <a href="/">About</a>
+      <a href="/blog.html" class="active">Writing</a>
+    </nav>
+  </header>
+  <main>
+${body}
+  </main>
+  <footer>
+    <span>Kristoffer Strømdal Wik</span>
+    <span><a href="https://wwwik.no">wwwik.no</a></span>
+    <span><a href="/rss.xml">RSS</a></span>
+    <span><a href="/auth/login" id="signin">Sign in</a></span>
+  </footer>
+</div>
+<script>
+  fetch('/auth/me', { credentials: 'same-origin' }).then(r => r.ok ? r.json() : null).then(m => {
+    if (m && m.signedIn) { const a = document.getElementById('signin'); a.textContent = 'Admin'; a.href = '/admin/'; }
+  }).catch(() => {});
+</script>
+</body>
+</html>
+`;
+
+fs.mkdirSync('posts', { recursive: true });
+for (const f of fs.readdirSync('posts')) if (/\.(html|md)$/.test(f)) fs.unlinkSync(path.join('posts', f));
+for (const p of sorted) {
+  const url = `${SITE}/posts/${p.id}.html`;
+  const article = {
+    '@context': 'https://schema.org', '@type': p.type === 'blog' ? 'BlogPosting' : 'Article',
+    headline: p.title, description: p.summary, datePublished: p.date, url,
+    keywords: (p.tags || []).join(', '), inLanguage: 'en',
+    author: { '@type': 'Person', name: 'Kristoffer Strømdal Wik', url: SITE },
+    mainEntityOfPage: url,
+  };
+  const head = `  <link rel="canonical" href="${url}" />
+  <link rel="alternate" type="text/markdown" href="${SITE}/posts/${esc(p.id)}.md" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="${esc(p.title)}" />
+  <meta property="og:description" content="${esc(p.summary)}" />
+  <meta property="og:url" content="${url}" />
+  <script type="application/ld+json">${JSON.stringify(article)}</script>
+`;
+  const body = `    <a href="/blog.html" class="back-link">← All posts</a>
+    <article>
+      <div class="post-header">
+        <h1>${esc(p.title)}</h1>
+        <p class="post-meta">${badge(p)}<time datetime="${esc(p.date)}">${fmtDate(p.date)}</time>${(p.tags || []).length ? ' · ' + p.tags.map((t) => '#' + esc(t)).join(' ') : ''}</p>
+      </div>
+      <div class="post-content">
+${marked.parse(p.content)}
+      </div>
+    </article>`;
+  fs.writeFileSync(`posts/${p.id}.html`, chrome(`${p.title} — Kristoffer Strømdal Wik`, p.summary, body, head));
+  fs.writeFileSync(`posts/${p.id}.md`, `# ${p.title}\n\n> ${p.summary}\n\nPublished ${p.date} by Kristoffer Strømdal Wik · ${url}${(p.tags || []).length ? ' · Tags: ' + p.tags.join(', ') : ''}\n\n${p.content.trim()}\n`);
+}
+
+// blog.html: bakt liste
+let blog = fs.readFileSync('blog.html', 'utf8');
+const blogRe = /(<!-- build:post-list -->)[\s\S]*?(<!-- \/build:post-list -->)/;
+if (!blogRe.test(blog)) { console.error('Mangler markør build:post-list i blog.html'); process.exit(1); }
+fs.writeFileSync('blog.html', blog.replace(blogRe, `$1${sorted.map(listItem).join('')}\n        $2`));
+
+// sitemap.xml
+const urls = [[`${SITE}/`, sorted[0]?.date], [`${SITE}/blog.html`, sorted[0]?.date], ...sorted.map((p) => [`${SITE}/posts/${p.id}.html`, p.date])];
+fs.writeFileSync('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(([u, d]) => `  <url><loc>${u}</loc>${d ? `<lastmod>${d}</lastmod>` : ''}</url>`).join('\n')}\n</urlset>\n`);
+
+// llms.txt (oversikt) og llms-full.txt (alt innhold)
+const md = (e) => `- **${e.title}**${e.date ? ` (${e.date})` : ''}${e.sub ? ` — ${e.sub}` : ''}${e.href ? ` — ${e.href}` : ''}${e.desc ? `: ${e.desc}` : ''}`;
+const about = `# Kristoffer Strømdal Wik
+
+> ${description}
+
+Personal site of Kristoffer Strømdal Wik (wwwik.no): writing, projects and CV. Content is in English. Each post is also available as Markdown at the .md link.
+
+## About
+
+- Links: ${(cv.links || []).map((l) => `${l.label} ${l.href}`).join(', ')}
+- Skills: ${cv.skills}
+
+## Projects
+
+${cv.projects.map(md).join('\n')}
+
+## Experience
+
+${cv.experience.map(md).join('\n')}
+
+## Education
+
+${cv.education.map(md).join('\n')}
+`;
+fs.writeFileSync('llms.txt', `${about}
+## Writing
+
+${sorted.map((p) => `- [${p.title}](${SITE}/posts/${p.id}.md) (${p.date}): ${p.summary}`).join('\n')}
+
+## Optional
+
+- [Full content of all posts](${SITE}/llms-full.txt)
+- [RSS feed](${SITE}/rss.xml)
+`);
+fs.writeFileSync('llms-full.txt', `${about}
+## Writing
+
+${sorted.map((p) => `---\n\n${fs.readFileSync(`posts/${p.id}.md`, 'utf8')}`).join('\n')}`);
+console.log(`✅ ${sorted.length} postsider, blog.html, sitemap.xml, llms.txt, llms-full.txt`);
+

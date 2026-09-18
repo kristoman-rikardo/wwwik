@@ -6,6 +6,7 @@
   <title>Writing — Kristoffer Strømdal Wik</title>
   <meta name="description" content="Writing" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="canonical" href="https://www.wwwik.no/blog.html" />
 </head>
 <body>
 <div class="wrap">
@@ -24,8 +25,50 @@
     <div id="list-view">
       <section>
         <h2>Writing</h2>
-        <ul class="post-list" id="post-list">
-          <li style="color:var(--muted);font-size:.88rem">Loading…</li>
+        <ul class="post-list" id="post-list"><!-- build:post-list -->
+        <li class="post-item">
+          <span class="post-date">23 May 2026</span>
+          <div class="post-body">
+            <div class="post-title"><span class="badge badge-blog">Post</span> <a href="/posts/school-debate.html">A school that fits no one might just fit everyone</a></div>
+            <p class="post-summary">While separating students by ability might yield marginal academic gains, not doing it might be the perfect complement to the boundless cognition of machines. An op-ed adjusted for and translated to English.</p>
+          </div>
+        </li>
+        <li class="post-item">
+          <span class="post-date">12 May 2026</span>
+          <div class="post-body">
+            <div class="post-title"><span class="badge badge-blog">Post</span> <a href="/posts/dalai-future.html">The road ahead: Dalai towards 2030</a></div>
+            <p class="post-summary">Where are we now, and what will happen to Dalai? One thing is for sure: it has been a good run.</p>
+          </div>
+        </li>
+        <li class="post-item">
+          <span class="post-date">30 Apr 2026</span>
+          <div class="post-body">
+            <div class="post-title"><span class="badge badge-blog">Post</span> <a href="/posts/karpe.html">On the retirement of Karpe</a></div>
+            <p class="post-summary">Remminicent review of the sound of my youth.</p>
+          </div>
+        </li>
+        <li class="post-item">
+          <span class="post-date">14 Apr 2026</span>
+          <div class="post-body">
+            <div class="post-title"><span class="badge badge-blog">Post</span> <a href="/posts/vibe-dystopia.html">The death of the fun project</a></div>
+            <p class="post-summary">What are we supposed to live off of after the oil? Making AI B2B SaaSses on our spare time?</p>
+          </div>
+        </li>
+        <li class="post-item">
+          <span class="post-date">13 Apr 2026</span>
+          <div class="post-body">
+            <div class="post-title"><span class="badge badge-blog">Post</span> <a href="/posts/laif.html">I am scared for my Laif!</a></div>
+            <p class="post-summary">Experimenting with a OpenClaw-based agentic system to properly coach me in sports and in general l(a)if (haha) sh leif.</p>
+          </div>
+        </li>
+        <li class="post-item">
+          <span class="post-date">10 Apr 2026</span>
+          <div class="post-body">
+            <div class="post-title"><span class="badge badge-blog">Post</span> <a href="/posts/welcome.html">Hi Claude, please make it say &quot;Hello, world&quot;</a></div>
+            <p class="post-summary">First post on wwwik.no. Will probably forget to write any more.</p>
+          </div>
+        </li>
+        <!-- /build:post-list -->
         </ul>
       </section>
     </div>
@@ -54,7 +97,7 @@
 </div>
 
 <!-- Marked.js for Markdown rendering -->
-<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+<script src="/vendor/marked.min.js"></script>
 <script>
   let allPosts = [];
 
@@ -64,10 +107,7 @@
       allPosts = [...posts].sort((a, b) => b.date.localeCompare(a.date));
       route();
     })
-    .catch(() => {
-      document.getElementById('post-list').innerHTML =
-        '<li style="color:var(--muted);font-size:.88rem">Could not load posts.</li>';
-    });
+    .catch(() => {});
 
   function route() {
     const hash = location.hash.slice(1);
@@ -83,6 +123,7 @@
     document.getElementById('list-view').classList.remove('hidden');
     document.getElementById('post-view').classList.remove('visible');
     document.title = 'Writing — Kristoffer Strømdal Wik';
+    if (document.querySelector('#post-list .post-item')) return; // bakt liste finnes allerede
 
     const list = document.getElementById('post-list');
     if (!allPosts.length) {
@@ -97,7 +138,7 @@
             <span class="badge badge-${p.type === 'achievement' ? 'achievement' : 'blog'}">
               ${p.type === 'achievement' ? 'Achievement' : 'Post'}
             </span>
-            <a href="#${p.id}">${p.title}</a>
+            <a href="/posts/${p.id}.html">${p.title}</a>
           </div>
           <p class="post-summary">${p.summary}</p>
         </div>

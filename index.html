@@ -7,7 +7,7 @@
   <meta property="og:image" content="/castle.png">
   <title>Kristoffer Strømdal Wik</title>
   <!-- build:meta-description --><meta name="description" content="I was formerly among the youngest people ever. Now, I am 20 years old. I&#39;m from Norway, thus I love mountains, skiing and Jon Fosse. I run, write and do projects. Here, I will only do the latter two." /><!-- /build:meta-description -->
-  <!-- build:jsonld --><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Kristoffer Strømdal Wik","givenName":"Kristoffer","url":"https://wwwik.no","description":"I was formerly among the youngest people ever. Now, I am 20 years old. I'm from Norway, thus I love mountains, skiing and Jon Fosse. I run, write and do projects. Here, I will only do the latter two.","sameAs":["https://github.com/kristoman-rikardo","https://www.linkedin.com/in/kristofferswik/"],"jobTitle":"Co-founder & CEO","worksFor":{"@type":"Organization","name":"Dalai"},"alumniOf":[{"@type":"EducationalOrganization","name":"NTNU"}],"knowsAbout":["Dalai","Askask","Plugga","OpenClaw Laif","Mosaic (not the browser)","make3d","Vibedoc.ai"]}</script><!-- /build:jsonld -->
+  <!-- build:jsonld --><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Kristoffer Strømdal Wik","givenName":"Kristoffer","url":"https://wwwik.no","description":"I was formerly among the youngest people ever. Now, I am 20 years old. I'm from Norway, thus I love mountains, skiing and Jon Fosse. I run, write and do projects. Here, I will only do the latter two.","sameAs":["https://github.com/kristoman-rikardo","https://www.linkedin.com/in/kristofferswik/"],"jobTitle":"Visiting Investment Analyst","worksFor":{"@type":"Organization","name":"Viking Growth"},"alumniOf":[{"@type":"EducationalOrganization","name":"NTNU"}],"knowsAbout":["Dalai","Askask","Plugga","OpenClaw Laif","Mosaic (not the browser)","make3d","Vibedoc.ai"]}</script><!-- /build:jsonld -->
   <link rel="canonical" href="https://wwwik.no" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2">
@@ -50,7 +50,7 @@
           <div class="post-body">
             <div class="post-title">
               <span class="badge badge-blog">Post</span>
-              <a href="blog.html#school-debate">A school that fits no one might just fit everyone</a>
+              <a href="/posts/school-debate.html">A school that fits no one might just fit everyone</a>
             </div>
             <p class="post-summary">While separating students by ability might yield marginal academic gains, not doing it might be the perfect complement to the boundless cognition of machines. An op-ed adjusted for and translated to English.</p>
           </div>
@@ -60,7 +60,7 @@
           <div class="post-body">
             <div class="post-title">
               <span class="badge badge-blog">Post</span>
-              <a href="blog.html#dalai-future">The road ahead: Dalai towards 2030</a>
+              <a href="/posts/dalai-future.html">The road ahead: Dalai towards 2030</a>
             </div>
             <p class="post-summary">Where are we now, and what will happen to Dalai? One thing is for sure: it has been a good run.</p>
           </div>
@@ -70,7 +70,7 @@
           <div class="post-body">
             <div class="post-title">
               <span class="badge badge-blog">Post</span>
-              <a href="blog.html#karpe">On the retirement of Karpe</a>
+              <a href="/posts/karpe.html">On the retirement of Karpe</a>
             </div>
             <p class="post-summary">Remminicent review of the sound of my youth.</p>
           </div>
@@ -80,7 +80,7 @@
           <div class="post-body">
             <div class="post-title">
               <span class="badge badge-blog">Post</span>
-              <a href="blog.html#vibe-dystopia">The death of the fun project</a>
+              <a href="/posts/vibe-dystopia.html">The death of the fun project</a>
             </div>
             <p class="post-summary">What are we supposed to live off of after the oil? Making AI B2B SaaSses on our spare time?</p>
           </div>
@@ -147,10 +147,22 @@
       <h2>Experience</h2>
       <div id="cv-experience"><!-- build:cv-experience -->
       <div class="entry">
+        <span class="entry-title">Visiting Investment Analyst</span>
+        <span class="entry-date">2026 -</span>
+        <span class="entry-sub">Viking Growth</span>
+        <p class="entry-desc">Working part time with B2B SaaS at the Nordic software investor.</p>
+      </div>
+      <div class="entry">
         <span class="entry-title">Co-founder &amp; CEO</span>
-        <span class="entry-date">2024 -</span>
+        <span class="entry-date">2024 - 2026</span>
         <span class="entry-sub">Dalai</span>
         <p class="entry-desc">Began doing custom reasoning LLM workflows for local SMBs, such as Hunderfossen, Kongeparken and Birken. Eventually turned to AI consulting projects for larger companies such as Standard and Sintef.</p>
+      </div>
+      <div class="entry">
+        <span class="entry-title">Financial Journalist</span>
+        <span class="entry-date">Summer 2026</span>
+        <span class="entry-sub">Finansavisen</span>
+        <p class="entry-desc">Wrote for the Norwegian financial daily. Highest-converting intern.</p>
       </div>
       <div class="entry">
         <span class="entry-title">Analyst</span>
@@ -259,7 +271,7 @@
               <span class="badge badge-${p.type === 'achievement' ? 'achievement' : 'blog'}">
                 ${p.type === 'achievement' ? 'Achievement' : 'Post'}
               </span>
-              <a href="blog.html#${p.id}">${p.title}</a>
+              <a href="/posts/${p.id}.html">${p.title}</a>
             </div>
             <p class="post-summary">${p.summary}</p>
           </div>

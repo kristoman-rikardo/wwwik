@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I am scared for my Laif! — Kristoffer Strømdal Wik</title>
+  <meta name="description" content="Experimenting with a OpenClaw-based agentic system to properly coach me in sports and in general l(a)if (haha) sh leif." />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2">
+  <link rel="alternate" type="application/rss+xml" title="Kristoffer Strømdal Wik" href="/rss.xml" />
+  <link rel="canonical" href="https://www.wwwik.no/posts/laif.html" />
+  <link rel="alternate" type="text/markdown" href="https://www.wwwik.no/posts/laif.md" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="I am scared for my Laif!" />
+  <meta property="og:description" content="Experimenting with a OpenClaw-based agentic system to properly coach me in sports and in general l(a)if (haha) sh leif." />
+  <meta property="og:url" content="https://www.wwwik.no/posts/laif.html" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"I am scared for my Laif!","description":"Experimenting with a OpenClaw-based agentic system to properly coach me in sports and in general l(a)if (haha) sh leif.","datePublished":"2026-04-13","url":"https://www.wwwik.no/posts/laif.html","keywords":"ai, projects, sport","inLanguage":"en","author":{"@type":"Person","name":"Kristoffer Strømdal Wik","url":"https://www.wwwik.no"},"mainEntityOfPage":"https://www.wwwik.no/posts/laif.html"}</script>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="site-name"><a href="/">Kristoffer Strømdal Wik</a></div>
+    <nav>
+      <a href="/">About</a>
+      <a href="/blog.html" class="active">Writing</a>
+    </nav>
+  </header>
+  <main>
+    <a href="/blog.html" class="back-link">← All posts</a>
+    <article>
+      <div class="post-header">
+        <h1>I am scared for my Laif!</h1>
+        <p class="post-meta"><span class="badge badge-blog">Post</span><time datetime="2026-04-13">13 Apr 2026</time> · #ai #projects #sport</p>
+      </div>
+      <div class="post-content">
+<p>I&#39;ve been my own coach for a while. Needed to distrubute the load of hacing to deal with me and my training and school. Now, Laif knows me almost as good as I know myself, and I find it scary, fun and helpful.</p>
+<p>The name is a play on &#39;life&#39;, &#39;ai&#39;(it&#39;s here to stay) and &#39;leif olav alnes&#39;. </p>
+<h3>How it works</h3>
+<p>Built on OpenClaw, which is a open-sourced framwork for personal agentic AI I&#39;ve been tinkering with. It&#39;s based around skills and tools for the agent to call — strava for training data, plugga for study and exam load, weather, calendar, and so on. 
+The gbrains part is a memory setup, which with some tweaking worked better for my use case. Standard RAG so he can recall my sessions, exams and life stuff n</p>
+<h3>Does it work?</h3>
+<p>Sorta as they say in the states. It&#39;s very expensive, so I am using some of the left over tokens from Dalai. It was too complex for sonnet 4.6, so I pivoted to opus for better (and more expensive) quality. It is not scarily good, but as they say on linkedin: this is the worst they will ever be.</p>
+<p>It is cool and a steep learning curve, and I just hope not to go bankrupt due to hundreds of cron jobs and heartbeats each using millions of tokens. Take care.</p>
+
+      </div>
+    </article>
+  </main>
+  <footer>
+    <span>Kristoffer Strømdal Wik</span>
+    <span><a href="https://wwwik.no">wwwik.no</a></span>
+    <span><a href="/rss.xml">RSS</a></span>
+    <span><a href="/auth/login" id="signin">Sign in</a></span>
+  </footer>
+</div>
+<script>
+  fetch('/auth/me', { credentials: 'same-origin' }).then(r => r.ok ? r.json() : null).then(m => {
+    if (m && m.signedIn) { const a = document.getElementById('signin'); a.textContent = 'Admin'; a.href = '/admin/'; }
+  }).catch(() => {});
+</script>
+</body>
+</html>
