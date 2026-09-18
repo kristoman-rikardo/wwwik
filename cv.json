@@ -1,0 +1,113 @@
+{
+  "name": "Kristoffer",
+  "bio": [
+    "I was formerly among the youngest people ever. Now, I am {age} years old.",
+    "I'm from Norway, thus I love mountains, skiing and Jon Fosse.",
+    "I run, write and do projects. Here, I will only do the latter two."
+  ],
+  "links": [
+    {
+      "label": "Email",
+      "href": "mailto:kristofferswik@gmail.com"
+    },
+    {
+      "label": "GitHub",
+      "href": "https://github.com/kristoman-rikardo"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/kristofferswik/"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Dalai",
+      "href": "https://dalai.no",
+      "date": "January 2024",
+      "sub": "Business / AI",
+      "desc": "Company started with my friend Simen. I sat as the CEO working with the great Mattis Holt as chairman. Learned lots, 30 customers, six-figured revenue."
+    },
+    {
+      "title": "Askask",
+      "href": "https://askask.ai",
+      "date": "June 2025",
+      "sub": "AI / E-commerce",
+      "desc": "Bet largely on embedded AI agents for e-commerce. Got two pilot customers, downturn for norwegian e-commerce and failed spectacularly."
+    },
+    {
+      "title": "Plugga",
+      "href": "https://plugga.no",
+      "date": "October 2025",
+      "sub": "Productivity",
+      "desc": "Exam and study planner/tracker with a exam set database for rating, discussing and viewing exams including grade distributions. Of course skills for agentic systems to write and pull information and integrated with Google and Apple calendar."
+    },
+    {
+      "title": "OpenClaw Laif",
+      "href": "blog.html#laif",
+      "date": "March 2026",
+      "sub": "AI / Producivity",
+      "desc": "Experimenting with a OpenClaw-based agentic system to properly coach me in sports and in general l(a)if (haha). Integrated skills for strava, plugga, and many more, in addition to building a custom gbrains-setup."
+    },
+    {
+      "title": "Mosaic (not the browser)",
+      "href": "https://github.com/kristoman-rikardo/mosaic-project",
+      "date": "April 2026",
+      "sub": "Non-vibe coding",
+      "desc": "Made a mosaic generator from scratch in Java and a front-end with quite ugly JavaFX-elements. My most ambitious non-AI-related project yet, very fun but slow. Still managed to get it done in under 16 hrs."
+    },
+    {
+      "title": "make3d",
+      "href": "https://github.com/kristoman-rikardo/make3d",
+      "date": "May 2026",
+      "sub": "Computer Vision",
+      "desc": "Currently building a fast and lightweight tool for generating simple to moderatly complex 3d renderings from a 2d photos. Difficult and fun."
+    },
+    {
+      "title": "Vibedoc.ai",
+      "href": "https://vibedoc.ai",
+      "date": "March 2025",
+      "sub": "AI",
+      "desc": "Made a code-docs generator for the advent of vibe coding. Mostly a sick domain name, hmu if you want to buy it."
+    }
+  ],
+  "experience": [
+    {
+      "title": "Co-founder & CEO",
+      "href": "",
+      "date": "2024 -",
+      "sub": "Dalai",
+      "desc": "Began doing custom reasoning LLM workflows for local SMBs, such as Hunderfossen, Kongeparken and Birken. Eventually turned to AI consulting projects for larger companies such as Standard and Sintef."
+    },
+    {
+      "title": "Analyst",
+      "href": "",
+      "date": "2025 -",
+      "sub": "InFi",
+      "desc": "Analysing and investing in Norwegian equities."
+    },
+    {
+      "title": "International Athlete",
+      "href": "",
+      "date": "2020 -",
+      "sub": "Skiing and Orienteering federations",
+      "desc": "5 times Norwegian champion, youth European champion, competed in youth Olympics. National team athlete in Ski Mountaineering and Orienteering."
+    },
+    {
+      "title": "Coach",
+      "href": "",
+      "date": "2021 - 2025",
+      "sub": "Freidig and Nidelv",
+      "desc": "Planned and lead training camps and weekly sessions for childeren ages 4 to 14 in several sports such as football, basket, athletics and orienteering."
+    }
+  ],
+  "education": [
+    {
+      "title": "M.Sc. Industrial Economics & Technology Management",
+      "href": "",
+      "date": "2025 - 2030",
+      "sub": "NTNU",
+      "desc": "Computer Science, AI and Economics."
+    }
+  ],
+  "skills": "Funny, kind, good-looking and humble."
+}

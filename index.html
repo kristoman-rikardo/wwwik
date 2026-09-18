@@ -27,19 +27,9 @@
 
     <!-- ── About ──────────────────────────────── -->
     <section id="about">
-      <h1> <span id="greeting"></span>, I'm Kristoffer.</h1>
-      <p>
-        <!-- Update this paragraph with your own bio -->
-        I was formerly among the youngest people ever. Now, I am <span id="my-age"></span> years old.
-        <br> I'm from Norway, thus I love mountains, skiing and Jon Fosse.
-        <br> I run, write and do projects. Here, I will only do the latter two.
-      </p>
-      <div class="contact-links">
-        <!-- Add/remove links as needed -->
-        <a href="mailto:kristofferswik@gmail.com">Email</a>
-        <a href="https://github.com/kristoman-rikardo" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/kristofferswik/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
+      <h1> <span id="greeting"></span>, I'm <span id="cv-name">Kristoffer</span>.</h1>
+      <p id="cv-bio"></p>
+      <div class="contact-links" id="cv-links"></div>
     </section>
 
     <!-- ── Recent writing ─────────────────────── -->
@@ -53,118 +43,28 @@
       </p>
     </section>
 
-    <!-- ── Projects ─────────────────────────── -->
+    <!-- ── CV: rendered from cv.json (edit in /admin/) ── -->
     <section id="projects">
       <h2>Projects</h2>
-
-      <div class="entry">
-        <span class="entry-title"><a href="https://dalai.no" target="_blank" rel="noopener">Dalai</a></span>
-        <span class="entry-date">January 2024</span>
-        <span class="entry-sub">Business / AI</span>
-        <p class="entry-desc">Company started with my friend Simen. I sat as the CEO working with the great Mattis Holt as chairman. Learned lots, 30 customers, six-figured revenue. </p>
-      </div>
-
-      <div class="entry">
-        <span class="entry-title"><a href="https://askask.ai" target="_blank" rel="noopener">Askask</a></span>
-        <span class="entry-date">June 2025</span>
-        <span class="entry-sub">AI / E-commerce</span>
-        <p class="entry-desc">Bet largely on embedded AI agents for e-commerce. Got two pilot customers, downturn for norwegian e-commerce and failed spectacularly.</p>
-      </div>
-
-      <div class="entry">
-        <span class="entry-title"><a href="https://plugga.no" target="_blank" rel="noopener">Plugga</a></span>
-        <span class="entry-date">October 2025</span>
-        <span class="entry-sub">Productivity</span>
-        <p class="entry-desc"> Exam and study planner/tracker with a exam set database for rating, discussing and viewing exams including grade distributions. Of course skills for agentic systems to write and pull information and integrated with Google and Apple calendar. </p>
-      </div>
-
-      <div class="entry">
-        <span class="entry-title"><a href="blog.html#laif">OpenClaw Laif</a></span>
-        <span class="entry-date">March 2026</span>
-        <span class="entry-sub">AI / Producivity</span>
-        <p class="entry-desc">Experimenting with a OpenClaw-based agentic system to properly coach me in sports and in general l(a)if (haha). Integrated skills for strava, plugga, and many more, in addition to building a custom gbrains-setup. </p>
-      </div>
-
-      <div class="entry">
-        <span class="entry-title"><a href="https://github.com/kristoman-rikardo/mosaic-project">Mosaic (not the browser)</a></span>
-        <span class="entry-date">April 2026</span>
-        <span class="entry-sub">Non-vibe coding</span>
-        <p class="entry-desc">Made a mosaic generator from scratch in Java and a front-end with quite ugly JavaFX-elements. My most ambitious non-AI-related project yet, very fun but slow. Still managed to get it done in under 16 hrs.</p>
-      </div>
-
-      <div class="entry">
-        <span class="entry-title"><a href="https://github.com/kristoman-rikardo/make3d">make3d</a></span>
-        <span class="entry-date">May 2026</span>
-        <span class="entry-sub">Computer Vision</span>
-        <p class="entry-desc">Currently building a fast and lightweight tool for generating simple to moderatly complex 3d renderings from a 2d photos. Difficult and fun.</p>
-      </div>
-
-      <div class="entry">
-        <span class="entry-title"><a href="https://vibedoc.ai">Vibedoc.ai</a></span>
-        <span class="entry-date">March 2025</span>
-        <span class="entry-sub">AI</span>
-        <p class="entry-desc">Made a code-docs generator for the advent of vibe coding. Mostly a sick domain name, hmu if you want to buy it.</p>
-      </div>
-
+      <div id="cv-projects"></div>
       <p style="margin-top:1rem;">
-        <a href="#" id="toggle-projects" style="font-size:.88rem; cursor:pointer;">Show more ↓</a>
+        <a href="#" id="toggle-projects" style="font-size:.88rem; cursor:pointer; display:none;">Show more ↓</a>
       </p>
     </section>
 
-    <!-- ── Experience ─────────────────────────── -->
     <section id="experience">
       <h2>Experience</h2>
-
-      <div class="entry">
-        <span class="entry-title"> Co-founder & CEO</span>
-        <span class="entry-date">2024 - </span>
-        <span class="entry-sub">Dalai</span>
-        <p class="entry-desc">Began doing custom reasoning LLM workflows for local SMBs, such as Hunderfossen, Kongeparken and Birken. Eventually turned to AI consulting projects for larger companies such as Standard and Sintef. </p>
-      </div>
-
-      <div class="entry">
-        <span class="entry-title">Analyst</span>
-        <span class="entry-date">2025 - </span>
-        <span class="entry-sub">InFi</span>
-        <p class="entry-desc">Analysing and investing in Norwegian equities.</p>
-      </div>
-
-      <div class="entry">
-        <span class="entry-title">International Athlete</span>
-        <span class="entry-date">2020 - </span>
-        <span class="entry-sub">Skiing and Orienteering federations </span>
-        <p class="entry-desc"> 5 times Norwegian champion, youth European champion, competed in youth Olympics. National team athlete in Ski Mountaineering and Orienteering. </p>
-      </div>
-
-      <div class="entry">
-        <span class="entry-title">Coach</span>
-        <span class="entry-date">2021 - 2025</span>
-        <span class="entry-sub">Freidig and Nidelv</span>
-        <p class="entry-desc">Planned and lead training camps and weekly sessions for childeren ages 4 to 14 in several sports such as football, basket, athletics and orienteering. </p>
-      </div>
-
+      <div id="cv-experience"></div>
     </section>
 
-    <!-- ── Education ──────────────────────────── -->
     <section id="education">
       <h2>Education</h2>
-
-      <div class="entry">
-        <span class="entry-title">M.Sc. Industrial Economics & Technology Management</span>
-        <span class="entry-date">2025 - 2030</span>
-        <span class="entry-sub">NTNU</span>
-        <p class="entry-desc">Computer Science, AI and Economics.</p>
-
-      </div>
-
+      <div id="cv-education"></div>
     </section>
 
-    <!-- ── Skills ─────────────────────────────── -->
     <section id="skills">
       <h2>Skills</h2>
-      <div class="skills" id="skills-list">
-        Funny, kind, good-looking and humble.
-      </div>
+      <div class="skills" id="cv-skills"></div>
     </section>
 
   </main>
@@ -190,13 +90,35 @@
   })();
 
   // Compute current age from birthdate
-  (function () {
+  function currentAge() {
     const birth = new Date(2005, 9, 3); // Oct 3 2005 (month is 0-indexed)
     const now = new Date();
     let age = now.getFullYear() - birth.getFullYear();
     if (now < new Date(now.getFullYear(), birth.getMonth(), birth.getDate())) age--;
-    document.getElementById('my-age').textContent = age;
-  })();
+    return age;
+  }
+
+  // Render CV sections from cv.json (edited in /admin/)
+  const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const entryHtml = (e) => `
+    <div class="entry">
+      <span class="entry-title">${e.href ? `<a href="${esc(e.href)}"${/^https?:/.test(e.href) ? ' target="_blank" rel="noopener"' : ''}>${esc(e.title)}</a>` : esc(e.title)}</span>
+      <span class="entry-date">${esc(e.date)}</span>
+      <span class="entry-sub">${esc(e.sub)}</span>
+      ${e.desc ? `<p class="entry-desc">${esc(e.desc)}</p>` : ''}
+    </div>`;
+  fetch('cv.json')
+    .then(r => r.json())
+    .then(cv => {
+      if (cv.name) document.getElementById('cv-name').textContent = cv.name;
+      document.getElementById('cv-bio').innerHTML = (cv.bio || []).map(l => esc(l).replace('{age}', currentAge())).join('<br> ');
+      document.getElementById('cv-links').innerHTML = (cv.links || []).map(l =>
+        `<a href="${esc(l.href)}"${/^https?:/.test(l.href) ? ' target="_blank" rel="noopener"' : ''}>${esc(l.label)}</a>`).join('');
+      for (const k of ['projects', 'experience', 'education']) document.getElementById('cv-' + k).innerHTML = (cv[k] || []).map(entryHtml).join('');
+      document.getElementById('cv-skills').textContent = cv.skills || '';
+      setupProjectToggle();
+    })
+    .catch(() => {});
 
   // Load recent posts from posts.json
   fetch('posts.json')
@@ -232,29 +154,20 @@
   }
 
   // Automatisk skjuling av prosjekter etter de 4 første
-  (function () {
+  function setupProjectToggle() {
     const projects = document.querySelectorAll('#projects .entry');
     const toggleBtn = document.getElementById('toggle-projects');
     let isHidden = true;
-
-    if (projects.length > 4) {
-      for (let i = 4; i < projects.length; i++) {
-        projects[i].style.display = 'none';
-      }
-    } else {
-      toggleBtn.style.display = 'none'; 
-    }
-
-    toggleBtn.addEventListener('click', function(e) {
+    if (projects.length <= 4) return;
+    toggleBtn.style.display = '';
+    for (let i = 4; i < projects.length; i++) projects[i].style.display = 'none';
+    toggleBtn.addEventListener('click', function (e) {
       e.preventDefault();
-      isHidden = !isHidden; 
-      
-      for (let i = 4; i < projects.length; i++) {
-        projects[i].style.display = isHidden ? 'none' : '';
-      }
+      isHidden = !isHidden;
+      for (let i = 4; i < projects.length; i++) projects[i].style.display = isHidden ? 'none' : '';
       this.textContent = isHidden ? 'Show more ↓' : 'Show less ↑';
     });
-  })();
+  }
 </script>
 <script>
   // Footer: vis "Admin" i stedet for "Sign in" hvis eier er innlogget.
