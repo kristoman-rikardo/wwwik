@@ -5,3 +5,7 @@ CLAUDE.md
 .settings/
 .vscode/
 *.settings
+# Driftsscript med hemmeligheter ligger i ~/.config, ikke i repoet
+duckdns.sh
+deploy.sh
+hooks.json
