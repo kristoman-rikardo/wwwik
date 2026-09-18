@@ -72,11 +72,25 @@
   ],
   "experience": [
     {
+      "title": "Visiting Investment Analyst",
+      "href": "https://vikinggrowth.com",
+      "date": "2026 -",
+      "sub": "Viking Growth",
+      "desc": "Working part time with B2B SaaS at the Nordic software investor."
+    },
+    {
       "title": "Co-founder & CEO",
       "href": "",
-      "date": "2024 -",
+      "date": "2024 - 2026",
       "sub": "Dalai",
       "desc": "Began doing custom reasoning LLM workflows for local SMBs, such as Hunderfossen, Kongeparken and Birken. Eventually turned to AI consulting projects for larger companies such as Standard and Sintef."
+    },
+    {
+      "title": "Financial Journalist",
+      "href": "https://fa.no",
+      "date": "Summer 2026",
+      "sub": "Finansavisen",
+      "desc": "Wrote for the Norwegian financial daily. Highest-converting intern."
     },
     {
       "title": "Analyst",
