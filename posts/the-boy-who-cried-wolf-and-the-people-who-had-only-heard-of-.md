@@ -1,6 +1,6 @@
 # The boy who cried wolf and the people who had only heard of dogs
 
-> The boy ran into town and cried wolf, but the people had only ever heard of dogs. Neglecting the cries, the people tried petting the wolf upon its arrival. How do we balance the need for urgency with our longing for comfort, understanding and superiority?
+> The boy ran into town and cried wolf, but the people had only ever heard of dogs. Ignoring the cries, the people tried petting the wolf upon its arrival. How do we balance the need for urgency with our longing for comfort, understanding and superiority?
 
 Published 2026-09-18 by Kristoffer Strømdal Wik · https://www.wwwik.no/posts/the-boy-who-cried-wolf-and-the-people-who-had-only-heard-of-.html · Tags: ai
 
