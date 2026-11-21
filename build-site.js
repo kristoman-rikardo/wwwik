@@ -48,7 +48,7 @@ const blocks = {
 };
 
 // Strukturerte data for søkemotorer.
-const description = (cv.bio || []).map((l) => l.replace('{age}', age)).join(' ');
+const description = cv.description || (cv.bio || []).map((l) => l.replace('{age}', age)).join(' ');
 const jsonld = {
   '@context': 'https://schema.org', '@type': 'Person',
   name: 'Kristoffer Strømdal Wik', givenName: cv.name || 'Kristoffer', url: 'https://wwwik.no', description,
